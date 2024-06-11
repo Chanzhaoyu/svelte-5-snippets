@@ -2,7 +2,7 @@
   "name": "svelte-5-snippets",
   "displayName": "Svelte 5 Snippets",
   "description": "svelte5 and svelte-kit snippets for vscode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "publisher": "Chanzhaoyu",
   "author": {
@@ -10,11 +10,11 @@
     "url": "https://github.com/Chanzhaoyu"
   },
   "bugs": {
-    "url": "https://github.com/Chanzhaoyu/sveltekit-5-snippets/issues"
+    "url": "https://github.com/Chanzhaoyu/svelte-5-snippets/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Chanzhaoyu/sveltekit-5-snippets"
+    "url": "https://github.com/Chanzhaoyu/svelte-5-snippets"
   },
   "engines": {
     "vscode": "^1.0.0"
