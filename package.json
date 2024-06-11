@@ -1,7 +1,7 @@
 {
   "name": "svelte-5-snippets",
   "displayName": "Svelte 5 Snippets",
-  "description": "svelte5 and svelte-kit Snippets for vscode",
+  "description": "svelte5 and svelte-kit snippets for vscode",
   "version": "1.0.0",
   "license": "MIT",
   "publisher": "Chanzhaoyu",

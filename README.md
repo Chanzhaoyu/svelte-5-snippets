@@ -2,7 +2,7 @@
 
 This extension is a set of Snippets for Svelte. They are created so that scaffolding with Svelte can be easy. You can try to remember most of these but. Before reading the full snippets down below. The snippets are made so that you write your HTML before writing your scripts and styles.
 
-![Demo](images/demo.gif)
+![Demo](https://github.com/Chanzhaoyu/svelte-5-snippets/raw/master/images/demo.gif)
 
 ## Snippets Documentation
 
@@ -17,17 +17,11 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 <summary>sv:base</summary>
 
 ```html
-<script lang="ts">
+<script lang="ts"></script>
 
-</script>
+<div></div>
 
-<div>
-
-</div>
-
-<style>
-
-</style>
+<style></style>
 ```
 
 </details>
@@ -37,19 +31,14 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 
 ```html
 <script lang="ts">
-import type { Snippet } from 'svelte';
+  import type { Snippet } from "svelte";
 
-let { children }:{ children:Snippet } = $props();
-
+  let { children }: { children: Snippet } = $props();
 </script>
 
-<div>
-  {@render children()}
-</div>
+<div>{@render children()}</div>
 
-<style>
-
-</style>
+<style></style>
 ```
 
 </details>
@@ -58,9 +47,7 @@ let { children }:{ children:Snippet } = $props();
 <summary>sv:script</summary>
 
 ```html
-<script lang="ts">
-
-</script>
+<script lang="ts"></script>
 ```
 
 </details>
@@ -69,9 +56,7 @@ let { children }:{ children:Snippet } = $props();
 <summary>sv:css</summary>
 
 ```html
-<style>
-
-</style>
+<style></style>
 ```
 
 </details>
@@ -80,9 +65,7 @@ let { children }:{ children:Snippet } = $props();
 <summary>sv:css-lang</summary>
 
 ```html
-<style lang="">
-
-</style>
+<style lang=""></style>
 ```
 
 </details>
@@ -91,9 +74,7 @@ let { children }:{ children:Snippet } = $props();
 <summary>sv:if</summary>
 
 ```html
-{#if }
-
-{/if}
+{#if } {/if}
 ```
 
 </details>
@@ -102,11 +83,7 @@ let { children }:{ children:Snippet } = $props();
 <summary>sv:if-else</summary>
 
 ```html
-{#if }
-
-{:else}
-
-{/if}
+{#if } {:else} {/if}
 ```
 
 </details>
@@ -389,10 +366,9 @@ animate:flip="{{delay: 250, duration: 250}}"
 
 ```html
 <script lang="ts">
-	import type { PageData } from './$types';
+  import type { PageData } from "./$types";
 
-	export let data: PageData;
-
+  export let data: PageData;
 </script>
 ```
 
@@ -454,12 +430,10 @@ export const load: LayoutServerLoad = async (event) => {
 <summary>sk:actions</summary>
 
 ```ts
-import { Actions } from './$types';
+import { Actions } from "./$types";
 
 export const actions: Actions = {
-	 async default({  }) {
-
-	 }
+  async default({}) {},
 };
 ```
 
@@ -484,7 +458,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 ```ts
 error(404, {
-	message:"Not found"
+  message: "Not found",
 });
 ```
 
@@ -673,7 +647,6 @@ const context = getContext();
 
 ```css
 :global() {
-
 }
 ```
 
