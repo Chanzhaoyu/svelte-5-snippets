@@ -2,7 +2,7 @@
 
 This extension is a set of Snippets for Svelte. They are created so that scaffolding with Svelte can be easy. You can try to remember most of these but. Before reading the full snippets down below. The snippets are made so that you write your HTML before writing your scripts and styles.
 
-![Demo]('images/demo.gif')
+![Demo](images/demo.gif)
 
 ## Snippets Documentation
 
