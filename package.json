@@ -4,8 +4,9 @@
   "description": "svelte5 and svelte-kit Snippets for vscode",
   "version": "1.0.0",
   "license": "MIT",
+  "publisher": "Chanzhaoyu",
   "author": {
-    "name": "Redon",
+    "name": "Chanzhaoyu",
     "url": "https://github.com/Chanzhaoyu"
   },
   "bugs": {
