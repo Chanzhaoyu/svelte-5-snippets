@@ -1,13 +1,11 @@
 {
   "Svelte if": {
     "prefix": "sv:if",
-    "body": ["{#if ${0}}", "", "{/if}"],
-    "description": "if"
+    "body": ["{#if ${0}}", "", "{/if}"]
   },
   "Svelte else": {
     "prefix": "sv:if-else",
-    "body": ["{#if ${1}}", "  ${2}", "{:else}", "  ${0}", "{/if}"],
-    "description": "else"
+    "body": ["{#if ${1}}", "  ${2}", "{:else}", "  ${0}", "{/if}"]
   },
   "Svelte if else if": {
     "prefix": "sv:if-else-if",
