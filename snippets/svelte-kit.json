@@ -1,0 +1,94 @@
+{
+  "SvelteKit Page": {
+    "prefix": "sk-page",
+    "body": [
+      "<script lang=\"ts\">",
+      "  import type { PageData } from './\\$types';",
+      "",
+      "  export let data: PageData;",
+      "  ${0}",
+      "</script>"
+    ]
+  },
+  "SvelteKit Page Load": {
+    "prefix": "sk-page-load",
+    "body": [
+      "import type { PageLoad } from './\\$types';",
+      "",
+      "export const load: PageLoad = async (${1:event}) => {",
+      "   $2",
+      "   return {",
+      "     $0",
+      "   };",
+      "};"
+    ]
+  },
+  "SvelteKit Page Server Load": {
+    "prefix": "sk-page-server-load",
+    "body": [
+      "import type { PageServerLoad } from './\\$types';",
+      "",
+      "export const load: PageServerLoad = async (${1:event}) => {",
+      "   $2",
+      "   return {",
+      "     $0",
+      "   };",
+      "};"
+    ]
+  },
+  "SvelteKit Layout Load": {
+    "prefix": "sk-layout-load",
+    "body": [
+      "import type { LayoutLoad } from './\\$types';",
+      "",
+      "export const load: LayoutLoad = async (${1:event}) => {",
+      "   $2",
+      "   return {",
+      "     $0",
+      "   };",
+      "};"
+    ]
+  },
+  "SvelteKit: Layout Server Load": {
+    "prefix": "sk-layout-server-load",
+    "body": [
+      "import type { LayoutServerLoad } from './\\$types';",
+      "",
+      "export const load: LayoutServerLoad = async (${1:event}) => {",
+      "   $2",
+      "   return {",
+      "     $0",
+      "   };",
+      "};"
+    ]
+  },
+  "SvelteKit Page Actions": {
+    "prefix": "sk-actions",
+    "body": [
+      "import { Actions } from './\\$types';",
+      "",
+      "export const actions: Actions = {",
+      "   async ${1:default}({ $2 }) {",
+      "     $3",
+      "   }",
+      "};"
+    ]
+  },
+  "SvelteKit Hooks Handle": {
+    "prefix": "sk-handle",
+    "body": [
+      "import type { Handle } from './\\$types';",
+      "",
+      "export const handle: Handle = async ({ event, resolve }) => {",
+      "   $1",
+      "",
+      "   const response = await resolve(event);",
+      "   return response;",
+      "};"
+    ]
+  },
+  "SvelteKit Error": {
+    "prefix": "sk-error",
+    "body": ["error(${1:404}, {", "  message:${2:\"Not found\"}", "});", "${0}"]
+  }
+}

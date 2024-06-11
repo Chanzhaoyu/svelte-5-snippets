@@ -1,0 +1,106 @@
+{
+  "Svelte $state()": {
+    "prefix": "s-state",
+    "body": ["let state = \\$state(${0})"]
+  },
+  "Svelte $state.frozen()": {
+    "prefix": "s-state-frozen",
+    "body": ["let state = \\$state.frozen(${0})"]
+  },
+  "Svelte $state.snapshot()": {
+    "prefix": "s-state-snapshot",
+    "body": ["\\$state.snapshot(${0})"]
+  },
+  "Svelte $state.is()": {
+    "prefix": "s-state-is",
+    "body": ["\\$state.is(${1}, ${0})"]
+  },
+  "Svelte $derived()": {
+    "prefix": "s-derived",
+    "body": ["let value = \\$derived(${0});"]
+  },
+  "Svelte $derived.by() ": {
+    "prefix": "s-derived-by",
+    "body": ["let value = \\$derived.by(()=>{", "\t${0}", "})"]
+  },
+  "Svelte $effect()": {
+    "prefix": "s-effect",
+    "body": ["\\$effect(() => {", "\t${0}", "})"]
+  },
+  "Svelte $effect.pre()": {
+    "prefix": "s-effect-pre",
+    "body": ["\\$effect.pre(() => {", "\t${0}", "})"]
+  },
+  "Svelte $effect.root()": {
+    "prefix": "s-effect-root",
+    "body": [
+      "const cleanup = \\$effect.root(() => {",
+      "\t\\$effect(() => {",
+      "\t\t${0}",
+      "\t})",
+      "",
+      "\treturn () => {",
+      "\t\t",
+      "\t};",
+      "});"
+    ]
+  },
+  "Svelte $props()": {
+    "prefix": "s-props",
+    "body": ["let { ${0} } = \\$props();"]
+  },
+  "Svelte $host()": {
+    "prefix": "s-host",
+    "body": ["\\$host().dispatchEvent(", "\t${0}", ");"]
+  },
+  "Svelte flushSync": {
+    "prefix": "s-flush-sync",
+    "body": ["flushSync(() => {", "\t${0}", "})"]
+  },
+  "Svelte hook": {
+    "prefix": "s-hook",
+    "body": [
+      "export function useCounter() {",
+      "\tlet count = \\$state(0)",
+      "",
+      "\tfunction increment() {",
+      "\t\tcount += 1;",
+      "\t}",
+      "",
+      "\treturn {",
+      "\t\tget count() {",
+      "\t\t\treturn count;",
+      "\t\t},",
+      "\t\tincrement",
+      "\t};",
+      "}"
+    ]
+  },
+  "Svelte store": {
+    "prefix": "s-store",
+    "body": [
+      "import { writable } from 'svelte/store';",
+      "",
+      "export function createCounter() {",
+      "\tconst { subscribe, update } = writable(0);",
+      "",
+      "\tfunction increment() {",
+      "\t\tupdate((count) => count + 1);",
+      "\t}",
+      "",
+      "\treturn {",
+      "\t\tsubscribe,",
+      "\t\tincrement",
+      "\t};",
+      "}"
+    ]
+  },
+  "Svelte setContext()": {
+    "prefix": "s-set-context",
+    "body": ["setContext(\"${1}\", ${0});"]
+  },
+  "Svelte getContext()": {
+    "prefix": "s-get-context",
+    "body": ["const context = getContext(${0});"]
+  }
+}

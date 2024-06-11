@@ -1,0 +1,65 @@
+{
+  "name": "svelte-5-snippets",
+  "displayName": "Svelte 5 Snippets",
+  "description": "svelte5 and svelte-kit Snippets for vscode",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Redon",
+    "url": "https://github.com/Chanzhaoyu"
+  },
+  "bugs": {
+    "url": "https://github.com/Chanzhaoyu/sveltekit-5-snippets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chanzhaoyu/sveltekit-5-snippets"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "svelte",
+        "aliases": [
+          "Svelte",
+          "svelte"
+        ],
+        "filenamePatterns": [
+          "*.svelte"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "svelte",
+        "path": "./snippets/svelte.json"
+      },
+      {
+        "language": "svelte",
+        "path": "./snippets/svelte-kit.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/svelte-kit.json"
+      },
+      {
+        "language": "svelte",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css.json"
+      }
+    ]
+  }
+}

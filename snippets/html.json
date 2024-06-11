@@ -1,0 +1,132 @@
+{
+  "Svelte if": {
+    "prefix": "s-if",
+    "body": ["{#if ${0}}", "", "{/if}"],
+    "description": "if"
+  },
+  "Svelte else": {
+    "prefix": "s-if-else",
+    "body": ["{#if ${1}}", "\t${2}", "{:else}", "\t${0}", "{/if}"],
+    "description": "else"
+  },
+  "Svelte if else if": {
+    "prefix": "s-if-else-if",
+    "body": ["{#if ${1}}", "\t${3}", "{:else if ${2}}", "\t${0}", "{/if}"]
+  },
+  "Svelte each": {
+    "prefix": "s-each",
+    "body": ["{#each ${1:items} as ${2:item}}", "\t${0}", "{/each}"]
+  },
+  "Svelte each else": {
+    "prefix": "s-each-else",
+    "body": [
+      "{#each ${1:items} as ${2:item}}",
+      "\t${0}",
+      "{:else}",
+      "\t",
+      "{/each}"
+    ]
+  },
+  "Svelte each index": {
+    "prefix": "s-each-index",
+    "body": ["{#each ${1:items} as ${2:item}, ${3:i}}", "\t${0}", "{/each}"]
+  },
+  "Svelte each index key": {
+    "prefix": "s-each-index-key",
+    "body": [
+      "{#each ${1:items} as ${2:item}, ${3:i} (${4:item.id})}",
+      "\t${0}",
+      "{/each}"
+    ]
+  },
+  "Svelte await": {
+    "prefix": "s-await",
+    "body": [
+      "{#await ${1:promise}}",
+      "\t${0}",
+      "{:then value}",
+      "\t",
+      "{:catch error}",
+      "\t",
+      "{/await}"
+    ]
+  },
+  "Svelte debug": {
+    "prefix": "s-debug",
+    "body": ["{@debug ${0}}"]
+  },
+  "Svelte html": {
+    "prefix": "s-html",
+    "body": ["{@html ${0}}"]
+  },
+  "Svelte snippet": {
+    "prefix": "s-snippet",
+    "body": ["{#snippet ${1:fc(value)}}", "\t${0}", "{/snippet}"]
+  },
+  "Svelte slot": {
+    "prefix": "s-slot",
+    "body": ["<slot></slot>"]
+  },
+  "Svelte slot name": {
+    "prefix": "s-slot-name",
+    "body": ["<slot name=\"${0}\"></slot>"]
+  },
+  "Svelte render": {
+    "prefix": "s-render",
+    "body": ["{@render ${0}}"]
+  },
+  "Svelte render fallback": {
+    "prefix": "s-render-fallback",
+    "body": [
+      "{#if children}",
+      "\t{@render children()}",
+      "{:else}",
+      "\t<span>default</span>",
+      "{/if}"
+    ]
+  },
+  "Svelte bind value": {
+    "prefix": "s-bind-value",
+    "body": ["bind:value={${0}}"]
+  },
+  "Svelte bind this": {
+    "prefix": "s-bind-this",
+    "body": ["bind:this={${0}}"]
+  },
+  "Svelte transition fade": {
+    "prefix": "s-transition-fade",
+    "body": ["transition:fade=\"{{delay: 250, duration: 300}}\""]
+  },
+  "Svelte transition blur": {
+    "prefix": "s-transition-blur",
+    "body": ["transition:blur=\"{{amount: 10}}\""]
+  },
+  "Svelte transition fly": {
+    "prefix": "s-transition-fly",
+    "body": [
+      "transition:fly=\"{{delay: 250, duration: 300, x: 100, y: 500, opacity: 0.5, easing: quintOut}}\""
+    ]
+  },
+  "Svelte transition slide": {
+    "prefix": "s-transition-slide",
+    "body": [
+      "transition:slide=\"{{delay: 250, duration: 300, easing: quintOut }}\""
+    ]
+  },
+  "Svelte transition scale": {
+    "prefix": "s-transition-scale",
+    "body": [
+      "transition:scale=\"{{duration: 500, delay: 500, opacity: 0.5, start: 0.5, easing: quintOut}}\""
+    ]
+  },
+  "Svelte transition draw": {
+    "prefix": "s-transition-draw",
+    "body": [
+      "transition:draw=\"{{duration: 5000, delay: 500, easing: quintOut}}\""
+    ]
+  },
+  "Svelte animate flip": {
+    "prefix": "s-animate-flip",
+    "body": ["animate:flip=\"{{delay: 250, duration: 250}}\""]
+  }
+}

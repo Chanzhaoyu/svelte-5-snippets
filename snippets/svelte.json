@@ -1,0 +1,73 @@
+{
+  "Svelte template": {
+    "prefix": "s-base",
+    "body": [
+      "<script lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<div>",
+      "\t${0}",
+      "</div>",
+      "",
+      "<style>",
+      "",
+      "</style>"
+    ]
+  },
+  "Svelte children": {
+    "prefix": "s-base-component",
+    "body": [
+      "<script lang=\"ts\">",
+      "import type { Snippet } from 'svelte';",
+      "",
+      "let { children }:{ children:Snippet } = \\$props();",
+      "${0}",
+      "</script>",
+      "",
+      "<div>",
+      "\t{@render children()}",
+      "</div>",
+      "",
+      "<style>",
+      "",
+      "</style>"
+    ]
+  },
+  "Svelte script": {
+    "prefix": "s-script",
+    "body": ["<script lang=\"ts\">", "\t\t${0}", "</script>"]
+  },
+  "Svelte component": {
+    "prefix": "s-component",
+    "body": ["<div>", "\t${0}", "</div>"]
+  },
+  "Svelte css": {
+    "prefix": "s-css",
+    "body": ["<style>", "\t${0}", "</style>"]
+  },
+  "Svelte css lang": {
+    "prefix": "s-css-lang",
+    "body": ["<style lang=\"${1}\">", "\t${0}", "</style>"]
+  },
+  "Svelte self": {
+    "prefix": "s-self",
+    "body": ["<svelte:self />"]
+  },
+  "svelte options": {
+    "prefix": "s-options",
+    "body": ["<svelte:options />"]
+  },
+  "Svelte window": {
+    "prefix": "s-window",
+    "body": ["<svelte:window ${0} />"]
+  },
+  "Svelte head": {
+    "prefix": "s-head",
+    "body": ["<svelte:head>", "\t${0}", "</svelte:head>"]
+  },
+  "Svelte body": {
+    "prefix": "s-body",
+    "body": ["<svelte:body ${0} />"]
+  }
+}
