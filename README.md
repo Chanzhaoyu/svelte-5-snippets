@@ -16,7 +16,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 <details>
 <summary>sv:base</summary>
 
-```
+```html
 <script lang="ts">
 
 </script>
@@ -35,7 +35,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 <details>
 <summary>sv:base-component</summary>
 
-```
+```html
 <script lang="ts">
 import type { Snippet } from 'svelte';
 
@@ -57,7 +57,7 @@ let { children }:{ children:Snippet } = $props();
 <details>
 <summary>sv:script</summary>
 
-```
+```html
 <script lang="ts">
 
 </script>
@@ -68,7 +68,7 @@ let { children }:{ children:Snippet } = $props();
 <details>
 <summary>sv:css</summary>
 
-```
+```html
 <style>
 
 </style>
@@ -79,7 +79,7 @@ let { children }:{ children:Snippet } = $props();
 <details>
 <summary>sv:css-lang</summary>
 
-```
+```html
 <style lang="">
 
 </style>
@@ -90,7 +90,7 @@ let { children }:{ children:Snippet } = $props();
 <details>
 <summary>sv:if</summary>
 
-```
+```html
 {#if }
 
 {/if}
@@ -101,7 +101,7 @@ let { children }:{ children:Snippet } = $props();
 <details>
 <summary>sv:if-else</summary>
 
-```
+```html
 {#if }
 
 {:else}
@@ -387,7 +387,7 @@ animate:flip="{{delay: 250, duration: 250}}"
 <details>
 <summary>sk:page</summary>
 
-```
+```html
 <script lang="ts">
 	import type { PageData } from './$types';
 
@@ -453,7 +453,7 @@ export const load: LayoutServerLoad = async (event) => {
 <details>
 <summary>sk:actions</summary>
 
-```
+```ts
 import { Actions } from './$types';
 
 export const actions: Actions = {
@@ -482,7 +482,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 <details>
 <summary>sk:error</summary>
 
-```
+```ts
 error(404, {
 	message:"Not found"
 });
@@ -671,7 +671,7 @@ const context = getContext();
 <details>
 <summary>sv:global-css</summary>
 
-```ts
+```css
 :global() {
 
 }
