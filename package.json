@@ -66,5 +66,8 @@
         "path": "./snippets/css.json"
       }
     ]
+  },
+  "scripts": {
+    "publish": "vsce publish"
   }
 }
