@@ -1,6 +1,6 @@
 # Svelte 5 Snippets
 
-This extension is a set of Snippets for Svelte. They are created so that scaffolding with Svelte can be easy. You can try to remember most of these but. Before reading the full snippets down below. The snippets are made so that you write your HTML before writing your scripts and styles.
+This extension is a set of Snippets for Svelte. They are created so that scaffolding with Svelte can be easy. You can try to remember most of these.
 
 ![Demo](https://github.com/Chanzhaoyu/svelte-5-snippets/raw/master/images/demo.gif)
 
