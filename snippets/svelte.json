@@ -1,13 +1,13 @@
 {
   "Svelte template": {
-    "prefix": "s-base",
+    "prefix": "sv:base",
     "body": [
       "<script lang=\"ts\">",
       "",
       "</script>",
       "",
       "<div>",
-      "\t${0}",
+      "  ${0}",
       "</div>",
       "",
       "<style>",
@@ -16,7 +16,7 @@
     ]
   },
   "Svelte children": {
-    "prefix": "s-base-component",
+    "prefix": "sv:base-component",
     "body": [
       "<script lang=\"ts\">",
       "import type { Snippet } from 'svelte';",
@@ -26,7 +26,7 @@
       "</script>",
       "",
       "<div>",
-      "\t{@render children()}",
+      "  {@render children()}",
       "</div>",
       "",
       "<style>",
@@ -35,39 +35,35 @@
     ]
   },
   "Svelte script": {
-    "prefix": "s-script",
-    "body": ["<script lang=\"ts\">", "\t\t${0}", "</script>"]
-  },
-  "Svelte component": {
-    "prefix": "s-component",
-    "body": ["<div>", "\t${0}", "</div>"]
+    "prefix": "sv:script",
+    "body": ["<script lang=\"ts\">", "  ${0}", "</script>"]
   },
   "Svelte css": {
-    "prefix": "s-css",
-    "body": ["<style>", "\t${0}", "</style>"]
+    "prefix": "sv:css",
+    "body": ["<style>", "  ${0}", "</style>"]
   },
   "Svelte css lang": {
-    "prefix": "s-css-lang",
-    "body": ["<style lang=\"${1}\">", "\t${0}", "</style>"]
+    "prefix": "sv:css-lang",
+    "body": ["<style lang=\"${1}\">", "  ${0}", "</style>"]
   },
   "Svelte self": {
-    "prefix": "s-self",
+    "prefix": "sv:self",
     "body": ["<svelte:self />"]
   },
   "svelte options": {
-    "prefix": "s-options",
+    "prefix": "sv:options",
     "body": ["<svelte:options />"]
   },
   "Svelte window": {
-    "prefix": "s-window",
+    "prefix": "sv:window",
     "body": ["<svelte:window ${0} />"]
   },
   "Svelte head": {
-    "prefix": "s-head",
-    "body": ["<svelte:head>", "\t${0}", "</svelte:head>"]
+    "prefix": "sv:head",
+    "body": ["<svelte:head>", "  ${0}", "</svelte:head>"]
   },
   "Svelte body": {
-    "prefix": "s-body",
+    "prefix": "sv:body",
     "body": ["<svelte:body ${0} />"]
   }
 }

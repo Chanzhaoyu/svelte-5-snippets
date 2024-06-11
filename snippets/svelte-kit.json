@@ -1,6 +1,6 @@
 {
   "SvelteKit Page": {
-    "prefix": "sk-page",
+    "prefix": "sk:page",
     "body": [
       "<script lang=\"ts\">",
       "  import type { PageData } from './\\$types';",
@@ -11,7 +11,7 @@
     ]
   },
   "SvelteKit Page Load": {
-    "prefix": "sk-page-load",
+    "prefix": "sk:page-load",
     "body": [
       "import type { PageLoad } from './\\$types';",
       "",
@@ -24,7 +24,7 @@
     ]
   },
   "SvelteKit Page Server Load": {
-    "prefix": "sk-page-server-load",
+    "prefix": "sk:page-server-load",
     "body": [
       "import type { PageServerLoad } from './\\$types';",
       "",
@@ -37,7 +37,7 @@
     ]
   },
   "SvelteKit Layout Load": {
-    "prefix": "sk-layout-load",
+    "prefix": "sk:layout-load",
     "body": [
       "import type { LayoutLoad } from './\\$types';",
       "",
@@ -50,7 +50,7 @@
     ]
   },
   "SvelteKit: Layout Server Load": {
-    "prefix": "sk-layout-server-load",
+    "prefix": "sk:layout-server-load",
     "body": [
       "import type { LayoutServerLoad } from './\\$types';",
       "",
@@ -63,7 +63,7 @@
     ]
   },
   "SvelteKit Page Actions": {
-    "prefix": "sk-actions",
+    "prefix": "sk:actions",
     "body": [
       "import { Actions } from './\\$types';",
       "",
@@ -75,7 +75,7 @@
     ]
   },
   "SvelteKit Hooks Handle": {
-    "prefix": "sk-handle",
+    "prefix": "sk:handle",
     "body": [
       "import type { Handle } from './\\$types';",
       "",
@@ -88,7 +88,7 @@
     ]
   },
   "SvelteKit Error": {
-    "prefix": "sk-error",
+    "prefix": "sk:error",
     "body": ["error(${1:404}, {", "  message:${2:\"Not found\"}", "});", "${0}"]
   }
 }
