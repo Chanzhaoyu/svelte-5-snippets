@@ -90,5 +90,74 @@
   "SvelteKit Error": {
     "prefix": "sk:error",
     "body": ["error(${1:404}, {", "  message:${2:\"Not found\"}", "});", "${0}"]
+  },
+  "SvelteKit api GET": {
+    "prefix": "sk:api-get",
+    "body": [
+      "import type { RequestHandler, RequestEvent } from './\\$types';",
+      "import { json } from \"@sveltejs/kit\"",
+      "",
+      "export const GET = (async ({ request }: RequestEvent) => {",
+      "  return json({ message: 'GET' })",
+      "}) satisfies RequestHandler;"
+    ]
+  },
+  "SvelteKit api POST": {
+    "prefix": "sk:api-post",
+    "body": [
+      "import type { RequestHandler, RequestEvent } from './\\$types';",
+      "import { json } from \"@sveltejs/kit\"",
+      "",
+      "export const GET = (async ({ request }: RequestEvent) => {",
+      "  return json({ message: 'POST' })",
+      "}) satisfies RequestHandler;"
+    ]
+  },
+  "SvelteKit api PUT": {
+    "prefix": "sk:api-put",
+    "body": [
+      "import type { RequestHandler, RequestEvent } from './\\$types';",
+      "import { json } from \"@sveltejs/kit\"",
+      "",
+      "export const PUT = (async ({ request }: RequestEvent) => {",
+      "  return json({ message: 'PUT' })",
+      "}) satisfies RequestHandler;"
+    ]
+  },
+  "SvelteKit api DELETE": {
+    "prefix": "sk:api-delete",
+    "body": [
+      "import type { RequestHandler, RequestEvent } from './\\$types';",
+      "import { json } from \"@sveltejs/kit\"",
+      "",
+      "export const DELETE = (async ({ request }: RequestEvent) => {",
+      "  return json({ message: 'DELETE' })",
+      "}) satisfies RequestHandler;"
+    ]
+  },
+  "SvelteKit api PATCH": {
+    "prefix": "sk:api-patch",
+    "body": [
+      "import type { RequestHandler, RequestEvent } from './\\$types';",
+      "import { json } from \"@sveltejs/kit\"",
+      "",
+      "export const PATCH = (async ({ request }: RequestEvent) => {",
+      "  return json({ message: 'PATCH' })",
+      "}) satisfies RequestHandler;"
+    ]
+  },
+  "SvelteKit browser": {
+    "prefix": "sk:browser",
+    "body": [
+      "import { browser } from \"\\$app/environment\";",
+      "",
+      "if (browser) {",
+      "  ${0}",
+      "}"
+    ]
+  },
+  "SvelteKit env private": {
+    "prefix": "sk:env-private",
+    "body": ["import { env } from \"\\$env/dynamic/private\";", "", "${0}"]
   }
 }

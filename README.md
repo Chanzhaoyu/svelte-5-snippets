@@ -464,6 +464,99 @@ error(404, {
 
 </details>
 
+<details>
+<summary>sk:api-get</summary>
+
+```ts
+import type { RequestHandler, RequestEvent } from './$types';
+import { json } from "@sveltejs/kit"
+
+export const GET = (async ({ request }: RequestEvent) => {
+	return json({ message: 'GET' })
+}) satisfies RequestHandler;
+```
+
+</details>
+
+<details>
+<summary>sk:api-post</summary>
+
+```ts
+import type { RequestHandler, RequestEvent } from './$types';
+import { json } from "@sveltejs/kit"
+
+export const GET = (async ({ request }: RequestEvent) => {
+	return json({ message: 'POST' })
+}) satisfies RequestHandler;
+```
+
+</details>
+
+<details>
+<summary>sk:api-put</summary>
+
+```ts
+import type { RequestHandler, RequestEvent } from './$types';
+import { json } from "@sveltejs/kit"
+
+export const PUT = (async ({ request }: RequestEvent) => {
+	return json({ message: 'PUT' })
+}) satisfies RequestHandler;
+```
+
+</details>
+
+<details>
+<summary>sk:api-delete</summary>
+
+```ts
+import type { RequestHandler, RequestEvent } from './$types';
+import { json } from "@sveltejs/kit"
+
+export const DELETE = (async ({ request }: RequestEvent) => {
+	return json({ message: 'DELETE' })
+}) satisfies RequestHandler;
+```
+
+</details>
+
+<details>
+<summary>sk:api-patch</summary>
+
+```ts
+import type { RequestHandler, RequestEvent } from './$types';
+import { json } from "@sveltejs/kit"
+
+export const PATCH = (async ({ request }: RequestEvent) => {
+	return json({ message: 'PATCH' })
+}) satisfies RequestHandler;
+```
+
+</details>
+
+
+<details>
+<summary>sk:browser</summary>
+
+```ts
+import { browser } from "$app/environment";
+
+if (browser) {
+	
+}
+```
+
+</details>
+
+<details>
+<summary>sk:env-private</summary>
+
+```ts
+import { env } from "$env/dynamic/private";
+```
+
+</details>
+
 ## TypeScript / JavaScript
 
 <details>
