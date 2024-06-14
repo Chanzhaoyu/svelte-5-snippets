@@ -31,6 +31,14 @@
     "prefix": "s-effect-pre",
     "body": ["\\$effect.pre(() => {", "\t${0}", "})"]
   },
+  "Svelte $effect.tracking()": {
+    "prefix": "s-effect-tracking",
+    "body": [
+      "\\$effect(() => {",
+      "  console.log('in effect:', \\$effect.tracking());",
+      "})"
+    ]
+  },
   "Svelte $effect.root()": {
     "prefix": "s-effect-root",
     "body": [

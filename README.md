@@ -9,7 +9,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 | Prefix | Description         |
 | ------ | ------------------- |
 | `s-`   | Svelte Snippets     |
-| `sk0`  | Svelte-Kit Snippets |
+| `sk-`  | Svelte-Kit Snippets |
 
 ## Svelte
 
@@ -625,6 +625,17 @@ $effect(() => {});
 
 ```ts
 $effect.pre(() => {});
+```
+
+</details>
+
+<details>
+<summary>s-effect-tracking</summary>
+
+```ts
+$effect(() => {
+	console.log('in effect:', $effect.tracking());
+})
 ```
 
 </details>

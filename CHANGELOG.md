@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.6]
+
+- feat: add new snippets `s-effect-tracking`
+
 ## [1.0.5]
 
 - fix: `s-self` snippet
