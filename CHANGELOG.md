@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.4]
+
+- chore: change `sk` to `sk-`
+- chore: change `sv` to `s-`
+- feat: add new snippets `s-computed`
+
 ## [1.0.3]
 
 - fix: `sk:handle` import error

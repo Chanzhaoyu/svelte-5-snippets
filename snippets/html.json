@@ -1,22 +1,22 @@
 {
   "Svelte if": {
-    "prefix": "sv:if",
+    "prefix": "s-if",
     "body": ["{#if ${0}}", "", "{/if}"]
   },
   "Svelte else": {
-    "prefix": "sv:if-else",
+    "prefix": "s-if-else",
     "body": ["{#if ${1}}", "  ${2}", "{:else}", "  ${0}", "{/if}"]
   },
   "Svelte if else if": {
-    "prefix": "sv:if-else-if",
+    "prefix": "s-if-else-if",
     "body": ["{#if ${1}}", "  ${3}", "{:else if ${2}}", "  ${0}", "{/if}"]
   },
   "Svelte each": {
-    "prefix": "sv:each",
+    "prefix": "s-each",
     "body": ["{#each ${1:items} as ${2:item}}", "  ${0}", "{/each}"]
   },
   "Svelte each else": {
-    "prefix": "sv:each-else",
+    "prefix": "s-each-else",
     "body": [
       "{#each ${1:items} as ${2:item}}",
       "  ${0}",
@@ -26,11 +26,11 @@
     ]
   },
   "Svelte each index": {
-    "prefix": "sv:each-index",
+    "prefix": "s-each-index",
     "body": ["{#each ${1:items} as ${2:item}, ${3:i}}", "  ${0}", "{/each}"]
   },
   "Svelte each index key": {
-    "prefix": "sv:each-index-key",
+    "prefix": "s-each-index-key",
     "body": [
       "{#each ${1:items} as ${2:item}, ${3:i} (${4:item.id})}",
       "  ${0}",
@@ -38,7 +38,7 @@
     ]
   },
   "Svelte await": {
-    "prefix": "sv:await",
+    "prefix": "s-await",
     "body": [
       "{#await ${1:promise}}",
       "  ${0}",
@@ -50,31 +50,31 @@
     ]
   },
   "Svelte debug": {
-    "prefix": "sv:debug",
+    "prefix": "s-debug",
     "body": ["{@debug ${0}}"]
   },
   "Svelte html": {
-    "prefix": "sv:html",
+    "prefix": "s-html",
     "body": ["{@html ${0}}"]
   },
   "Svelte snippet": {
-    "prefix": "sv:snippet",
+    "prefix": "s-snippet",
     "body": ["{#snippet ${1:fc(value)}}", "  ${0}", "{/snippet}"]
   },
   "Svelte slot": {
-    "prefix": "sv:slot",
+    "prefix": "s-slot",
     "body": ["<slot></slot>"]
   },
   "Svelte slot name": {
-    "prefix": "sv:slot-name",
+    "prefix": "s-slot-name",
     "body": ["<slot name=\"${0}\"></slot>"]
   },
   "Svelte render": {
-    "prefix": "sv:render",
+    "prefix": "s-render",
     "body": ["{@render ${0}}"]
   },
   "Svelte render fallback": {
-    "prefix": "sv:render-fallback",
+    "prefix": "s-render-fallback",
     "body": [
       "{#if children}",
       "  {@render children()}",
@@ -84,47 +84,47 @@
     ]
   },
   "Svelte bind value": {
-    "prefix": "sv:bind-value",
+    "prefix": "s-bind-value",
     "body": ["bind:value={${0}}"]
   },
   "Svelte bind this": {
-    "prefix": "sv:bind-this",
+    "prefix": "s-bind-this",
     "body": ["bind:this={${0}}"]
   },
   "Svelte transition fade": {
-    "prefix": "sv:transition-fade",
+    "prefix": "s-transition-fade",
     "body": ["transition:fade=\"{{delay: 250, duration: 300}}\""]
   },
   "Svelte transition blur": {
-    "prefix": "sv:transition-blur",
+    "prefix": "s-transition-blur",
     "body": ["transition:blur=\"{{amount: 10}}\""]
   },
   "Svelte transition fly": {
-    "prefix": "sv:transition-fly",
+    "prefix": "s-transition-fly",
     "body": [
       "transition:fly=\"{{delay: 250, duration: 300, x: 100, y: 500, opacity: 0.5, easing: quintOut}}\""
     ]
   },
   "Svelte transition slide": {
-    "prefix": "sv:transition-slide",
+    "prefix": "s-transition-slide",
     "body": [
       "transition:slide=\"{{delay: 250, duration: 300, easing: quintOut }}\""
     ]
   },
   "Svelte transition scale": {
-    "prefix": "sv:transition-scale",
+    "prefix": "s-transition-scale",
     "body": [
       "transition:scale=\"{{duration: 500, delay: 500, opacity: 0.5, start: 0.5, easing: quintOut}}\""
     ]
   },
   "Svelte transition draw": {
-    "prefix": "sv:transition-draw",
+    "prefix": "s-transition-draw",
     "body": [
       "transition:draw=\"{{duration: 5000, delay: 500, easing: quintOut}}\""
     ]
   },
   "Svelte animate flip": {
-    "prefix": "sv:animate-flip",
+    "prefix": "s-animate-flip",
     "body": ["animate:flip=\"{{delay: 250, duration: 250}}\""]
   }
 }

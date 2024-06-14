@@ -8,13 +8,13 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 
 | Prefix | Description         |
 | ------ | ------------------- |
-| `sv`   | Svelte Snippets     |
-| `sk`   | Svelte-Kit Snippets |
+| `s-`   | Svelte Snippets     |
+| `sk0`  | Svelte-Kit Snippets |
 
 ## Svelte
 
 <details>
-<summary>sv:base</summary>
+<summary>s-base</summary>
 
 ```html
 <script lang="ts"></script>
@@ -27,7 +27,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:base-component</summary>
+<summary>s-base-component</summary>
 
 ```html
 <script lang="ts">
@@ -44,7 +44,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:script</summary>
+<summary>s-script</summary>
 
 ```html
 <script lang="ts"></script>
@@ -53,7 +53,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:css</summary>
+<summary>s-css</summary>
 
 ```html
 <style></style>
@@ -62,7 +62,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:css-lang</summary>
+<summary>s-css-lang</summary>
 
 ```html
 <style lang=""></style>
@@ -71,7 +71,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:if</summary>
+<summary>s-if</summary>
 
 ```html
 {#if } {/if}
@@ -80,7 +80,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:if-else</summary>
+<summary>s-if-else</summary>
 
 ```html
 {#if } {:else} {/if}
@@ -89,7 +89,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:if-else-if</summary>
+<summary>s-if-else-if</summary>
 
 ```
 {#if }
@@ -102,7 +102,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:each</summary>
+<summary>s-each</summary>
 
 ```
 {#each items as item}
@@ -113,7 +113,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:each-else</summary>
+<summary>s-each-else</summary>
 
 ```
 {#each items as item}
@@ -126,7 +126,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:each-index</summary>
+<summary>s-each-index</summary>
 
 ```
 {#each items as item, i}
@@ -137,7 +137,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:each-index-key</summary>
+<summary>s-each-index-key</summary>
 
 ```
 {#each items as item, i (item.id)}
@@ -148,7 +148,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:await</summary>
+<summary>s-await</summary>
 
 ```
 {#await promise}
@@ -163,7 +163,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:debug</summary>
+<summary>s-debug</summary>
 
 ```
 {@debug }
@@ -172,7 +172,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:html</summary>
+<summary>s-html</summary>
 
 ```
 {@html }
@@ -181,7 +181,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:snippet</summary>
+<summary>s-snippet</summary>
 
 ```
 {#snippet fc(value)}
@@ -192,7 +192,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:slot</summary>
+<summary>s-slot</summary>
 
 ```
 <slot></slot>
@@ -201,7 +201,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:slot-name</summary>
+<summary>s-slot-name</summary>
 
 ```
 <slot name=""></slot>
@@ -210,7 +210,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:render</summary>
+<summary>s-render</summary>
 
 ```
 {@render }
@@ -219,7 +219,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:render-fallback</summary>
+<summary>s-render-fallback</summary>
 
 ```
 {#if children}
@@ -232,7 +232,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>sv:bind-value</summary>
+<summary>s-bind-value</summary>
 
 ```
 bind:value={}
@@ -241,7 +241,7 @@ bind:value={}
 </details>
 
 <details>
-<summary>sv:bind-this</summary>
+<summary>s-bind-this</summary>
 
 ```
 bind:this={}
@@ -250,7 +250,7 @@ bind:this={}
 </details>
 
 <details>
-<summary>sv:transition-fade</summary>
+<summary>s-transition-fade</summary>
 
 ```
 transition:fade="{{delay: 250, duration: 300}}"
@@ -259,7 +259,7 @@ transition:fade="{{delay: 250, duration: 300}}"
 </details>
 
 <details>
-<summary>sv:transition-blur</summary>
+<summary>s-transition-blur</summary>
 
 ```
 transition:blur="{{amount: 10}}"
@@ -268,7 +268,7 @@ transition:blur="{{amount: 10}}"
 </details>
 
 <details>
-<summary>sv:transition-fly</summary>
+<summary>s-transition-fly</summary>
 
 ```
 transition:fly="{{delay: 250, duration: 300, x: 100, y: 500, opacity: 0.5, easing: quintOut}}"
@@ -277,7 +277,7 @@ transition:fly="{{delay: 250, duration: 300, x: 100, y: 500, opacity: 0.5, easin
 </details>
 
 <details>
-<summary>sv:transition-slide</summary>
+<summary>s-transition-slide</summary>
 
 ```
 transition:slide="{{delay: 250, duration: 300, easing: quintOut }}"
@@ -286,7 +286,7 @@ transition:slide="{{delay: 250, duration: 300, easing: quintOut }}"
 </details>
 
 <details>
-<summary>sv:transition-scale</summary>
+<summary>s-transition-scale</summary>
 
 ```
 transition:scale="{{duration: 500, delay: 500, opacity: 0.5, start: 0.5, easing: quintOut}}"
@@ -295,7 +295,7 @@ transition:scale="{{duration: 500, delay: 500, opacity: 0.5, start: 0.5, easing:
 </details>
 
 <details>
-<summary>sv:transition-draw</summary>
+<summary>s-transition-draw</summary>
 
 ```
 transition:draw="{{duration: 5000, delay: 500, easing: quintOut}}"
@@ -304,7 +304,7 @@ transition:draw="{{duration: 5000, delay: 500, easing: quintOut}}"
 </details>
 
 <details>
-<summary>sv:animate-flip</summary>
+<summary>s-animate-flip</summary>
 
 ```
 animate:flip="{{delay: 250, duration: 250}}"
@@ -313,16 +313,16 @@ animate:flip="{{delay: 250, duration: 250}}"
 </details>
 
 <details>
-<summary>sv:self</summary>
+<summary>s-self</summary>
 
 ```
-<sv:self></sv:self>
+<svelte:self></svelte:self>
 ```
 
 </details>
 
 <details>
-<summary>sv:options</summary>
+<summary>s-options</summary>
 
 ```
 <svelte:options />
@@ -331,7 +331,7 @@ animate:flip="{{delay: 250, duration: 250}}"
 </details>
 
 <details>
-<summary>sv:window</summary>
+<summary>s-window</summary>
 
 ```
 <svelte:window  />
@@ -340,7 +340,7 @@ animate:flip="{{delay: 250, duration: 250}}"
 </details>
 
 <details>
-<summary>sv:head</summary>
+<summary>s-head</summary>
 
 ```
 <svelte:head>
@@ -351,7 +351,7 @@ animate:flip="{{delay: 250, duration: 250}}"
 </details>
 
 <details>
-<summary>sv:body</summary>
+<summary>s-body</summary>
 
 ```
 <svelte:body  />
@@ -362,7 +362,7 @@ animate:flip="{{delay: 250, duration: 250}}"
 ## Svelte Kit
 
 <details>
-<summary>sk:page</summary>
+<summary>sk-page</summary>
 
 ```html
 <script lang="ts">
@@ -375,7 +375,7 @@ animate:flip="{{delay: 250, duration: 250}}"
 </details>
 
 <details>
-<summary>sk:page-load</summary>
+<summary>sk-page-load</summary>
 
 ```ts
 import type { PageLoad } from "./$types";
@@ -388,7 +388,7 @@ export const load: PageLoad = async (event) => {
 </details>
 
 <details>
-<summary>sk:page-server-load</summary>
+<summary>sk-page-server-load</summary>
 
 ```ts
 import type { PageServerLoad } from "./$types";
@@ -401,7 +401,7 @@ export const load: PageServerLoad = async (event) => {
 </details>
 
 <details>
-<summary>sk:layout-load</summary>
+<summary>sk-layout-load</summary>
 
 ```ts
 import type { LayoutLoad } from "./$types";
@@ -414,7 +414,7 @@ export const load: LayoutLoad = async (event) => {
 </details>
 
 <details>
-<summary>sk:layout-server-load</summary>
+<summary>sk-layout-server-load</summary>
 
 ```ts
 import type { LayoutServerLoad } from "./$types";
@@ -427,7 +427,7 @@ export const load: LayoutServerLoad = async (event) => {
 </details>
 
 <details>
-<summary>sk:actions</summary>
+<summary>sk-actions</summary>
 
 ```ts
 import { Actions } from "./$types";
@@ -440,7 +440,7 @@ export const actions: Actions = {
 </details>
 
 <details>
-<summary>sk:handle</summary>
+<summary>sk-handle</summary>
 
 ```ts
 import type { Handle } from "./$types";
@@ -454,7 +454,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 </details>
 
 <details>
-<summary>sk:error</summary>
+<summary>sk-error</summary>
 
 ```ts
 error(404, {
@@ -465,91 +465,89 @@ error(404, {
 </details>
 
 <details>
-<summary>sk:api-get</summary>
+<summary>sk-api-get</summary>
 
 ```ts
-import type { RequestHandler, RequestEvent } from './$types';
-import { json } from "@sveltejs/kit"
+import type { RequestHandler, RequestEvent } from "./$types";
+import { json } from "@sveltejs/kit";
 
 export const GET = (async ({ request }: RequestEvent) => {
-	return json({ message: 'GET' })
+  return json({ message: "GET" });
 }) satisfies RequestHandler;
 ```
 
 </details>
 
 <details>
-<summary>sk:api-post</summary>
+<summary>sk-api-post</summary>
 
 ```ts
-import type { RequestHandler, RequestEvent } from './$types';
-import { json } from "@sveltejs/kit"
+import type { RequestHandler, RequestEvent } from "./$types";
+import { json } from "@sveltejs/kit";
 
 export const GET = (async ({ request }: RequestEvent) => {
-	return json({ message: 'POST' })
+  return json({ message: "POST" });
 }) satisfies RequestHandler;
 ```
 
 </details>
 
 <details>
-<summary>sk:api-put</summary>
+<summary>sk-api-put</summary>
 
 ```ts
-import type { RequestHandler, RequestEvent } from './$types';
-import { json } from "@sveltejs/kit"
+import type { RequestHandler, RequestEvent } from "./$types";
+import { json } from "@sveltejs/kit";
 
 export const PUT = (async ({ request }: RequestEvent) => {
-	return json({ message: 'PUT' })
+  return json({ message: "PUT" });
 }) satisfies RequestHandler;
 ```
 
 </details>
 
 <details>
-<summary>sk:api-delete</summary>
+<summary>sk-api-delete</summary>
 
 ```ts
-import type { RequestHandler, RequestEvent } from './$types';
-import { json } from "@sveltejs/kit"
+import type { RequestHandler, RequestEvent } from "./$types";
+import { json } from "@sveltejs/kit";
 
 export const DELETE = (async ({ request }: RequestEvent) => {
-	return json({ message: 'DELETE' })
+  return json({ message: "DELETE" });
 }) satisfies RequestHandler;
 ```
 
 </details>
 
 <details>
-<summary>sk:api-patch</summary>
+<summary>sk-api-patch</summary>
 
 ```ts
-import type { RequestHandler, RequestEvent } from './$types';
-import { json } from "@sveltejs/kit"
+import type { RequestHandler, RequestEvent } from "./$types";
+import { json } from "@sveltejs/kit";
 
 export const PATCH = (async ({ request }: RequestEvent) => {
-	return json({ message: 'PATCH' })
+  return json({ message: "PATCH" });
 }) satisfies RequestHandler;
 ```
 
 </details>
 
-
 <details>
-<summary>sk:browser</summary>
+<summary>sk-browser</summary>
 
 ```ts
 import { browser } from "$app/environment";
 
 if (browser) {
-	
 }
 ```
 
 </details>
 
 <details>
-<summary>sk:env-private</summary>
+<summary>sk-env-private</summary>
 
 ```ts
 import { env } from "$env/dynamic/private";
@@ -560,7 +558,7 @@ import { env } from "$env/dynamic/private";
 ## TypeScript / JavaScript
 
 <details>
-<summary>sv:state</summary>
+<summary>s-state</summary>
 
 ```ts
 let state = $state();
@@ -569,7 +567,7 @@ let state = $state();
 </details>
 
 <details>
-<summary>sv:state-frozen</summary>
+<summary>s-state-frozen</summary>
 
 ```ts
 let state = $state.frozen();
@@ -578,7 +576,7 @@ let state = $state.frozen();
 </details>
 
 <details>
-<summary>sv:state-snapshot</summary>
+<summary>s-state-snapshot</summary>
 
 ```ts
 $state.snapshot();
@@ -587,7 +585,7 @@ $state.snapshot();
 </details>
 
 <details>
-<summary>sv:state-is</summary>
+<summary>s-state-is</summary>
 
 ```ts
 $state.is(, )
@@ -596,7 +594,7 @@ $state.is(, )
 </details>
 
 <details>
-<summary>sv:derived</summary>
+<summary>s-derived</summary>
 
 ```ts
 let value = $derived();
@@ -605,7 +603,7 @@ let value = $derived();
 </details>
 
 <details>
-<summary>sv:derived-by</summary>
+<summary>s-derived-by</summary>
 
 ```ts
 let value = $derived.by(() => {});
@@ -614,7 +612,7 @@ let value = $derived.by(() => {});
 </details>
 
 <details>
-<summary>sv:effect</summary>
+<summary>s-effect</summary>
 
 ```ts
 $effect(() => {});
@@ -623,7 +621,7 @@ $effect(() => {});
 </details>
 
 <details>
-<summary>sv:effect-pre</summary>
+<summary>s-effect-pre</summary>
 
 ```ts
 $effect.pre(() => {});
@@ -632,7 +630,7 @@ $effect.pre(() => {});
 </details>
 
 <details>
-<summary>sv:effect-root</summary>
+<summary>s-effect-root</summary>
 
 ```ts
 const cleanup = $effect.root(() => {
@@ -645,7 +643,25 @@ const cleanup = $effect.root(() => {
 </details>
 
 <details>
-<summary>sv:props</summary>
+<summary>s-computed</summary>
+
+```ts
+let value = $state("");
+
+let valueComputed = {
+  get value() {
+    return value;
+  },
+  set value(newValue) {
+    value = newValue;
+  },
+};
+```
+
+</details>
+
+<details>
+<summary>s-props</summary>
 
 ```ts
 let {} = $props();
@@ -654,7 +670,7 @@ let {} = $props();
 </details>
 
 <details>
-<summary>sv:host</summary>
+<summary>s-host</summary>
 
 ```ts
 $host().dispatchEvent();
@@ -663,7 +679,7 @@ $host().dispatchEvent();
 </details>
 
 <details>
-<summary>sv:flush-sync</summary>
+<summary>s-flush-sync</summary>
 
 ```ts
 flushSync(() => {});
@@ -672,7 +688,7 @@ flushSync(() => {});
 </details>
 
 <details>
-<summary>sv:hook</summary>
+<summary>s-hook</summary>
 
 ```ts
 export function useCounter() {
@@ -694,7 +710,7 @@ export function useCounter() {
 </details>
 
 <details>
-<summary>sv:store</summary>
+<summary>s-store</summary>
 
 ```ts
 import { writable } from "svelte/store";
@@ -716,7 +732,7 @@ export function createCounter() {
 </details>
 
 <details>
-<summary>sv:set-context</summary>
+<summary>s-set-context</summary>
 
 ```ts
 setContext("");
@@ -725,7 +741,7 @@ setContext("");
 </details>
 
 <details>
-<summary>sv:get-context</summary>
+<summary>s-get-context</summary>
 
 ```ts
 const context = getContext();
@@ -736,7 +752,7 @@ const context = getContext();
 ## Css
 
 <details>
-<summary>sv:global-css</summary>
+<summary>s-global-css</summary>
 
 ```css
 :global() {

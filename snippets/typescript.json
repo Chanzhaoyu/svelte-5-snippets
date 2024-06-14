@@ -1,38 +1,38 @@
 {
   "Svelte $state()": {
-    "prefix": "sv:state",
+    "prefix": "s-state",
     "body": ["let state = \\$state(${0})"]
   },
   "Svelte $state.frozen()": {
-    "prefix": "sv:state-frozen",
+    "prefix": "s-state-frozen",
     "body": ["let state = \\$state.frozen(${0})"]
   },
   "Svelte $state.snapshot()": {
-    "prefix": "sv:state-snapshot",
+    "prefix": "s-state-snapshot",
     "body": ["\\$state.snapshot(${0})"]
   },
   "Svelte $state.is()": {
-    "prefix": "sv:state-is",
+    "prefix": "s-state-is",
     "body": ["\\$state.is(${1}, ${0})"]
   },
   "Svelte $derived()": {
-    "prefix": "sv:derived",
+    "prefix": "s-derived",
     "body": ["let value = \\$derived(${0});"]
   },
   "Svelte $derived.by() ": {
-    "prefix": "sv:derived-by",
+    "prefix": "s-derived-by",
     "body": ["let value = \\$derived.by(()=>{", "\t${0}", "})"]
   },
   "Svelte $effect()": {
-    "prefix": "sv:effect",
+    "prefix": "s-effect",
     "body": ["\\$effect(() => {", "\t${0}", "})"]
   },
   "Svelte $effect.pre()": {
-    "prefix": "sv:effect-pre",
+    "prefix": "s-effect-pre",
     "body": ["\\$effect.pre(() => {", "\t${0}", "})"]
   },
   "Svelte $effect.root()": {
-    "prefix": "sv:effect-root",
+    "prefix": "s-effect-root",
     "body": [
       "const cleanup = \\$effect.root(() => {",
       "\t\\$effect(() => {",
@@ -45,20 +45,36 @@
       "});"
     ]
   },
+  "Svelte Computed": {
+    "prefix": "s-computed",
+    "body": [
+      "let value = \\$state(\"\")",
+      "",
+      "let valueComputed = {",
+      "  get value() {",
+      "    return value;",
+      "  },",
+      "  set value(newValue) {",
+      "    value = newValue;",
+      "  }",
+      "};",
+      "${0}"
+    ]
+  },
   "Svelte $props()": {
-    "prefix": "sv:props",
+    "prefix": "s-props",
     "body": ["let { ${0} } = \\$props();"]
   },
   "Svelte $host()": {
-    "prefix": "sv:host",
+    "prefix": "s-host",
     "body": ["\\$host().dispatchEvent(", "\t${0}", ");"]
   },
   "Svelte flushSync": {
-    "prefix": "sv:flush-sync",
+    "prefix": "s-flush-sync",
     "body": ["flushSync(() => {", "\t${0}", "})"]
   },
   "Svelte hook": {
-    "prefix": "sv:hook",
+    "prefix": "s-hook",
     "body": [
       "export function useCounter() {",
       "\tlet count = \\$state(0)",
@@ -77,7 +93,7 @@
     ]
   },
   "Svelte store": {
-    "prefix": "sv:store",
+    "prefix": "s-store",
     "body": [
       "import { writable } from 'svelte/store';",
       "",
@@ -96,11 +112,11 @@
     ]
   },
   "Svelte setContext()": {
-    "prefix": "sv:set-context",
+    "prefix": "s-set-context",
     "body": ["setContext(\"${1}\", ${0});"]
   },
   "Svelte getContext()": {
-    "prefix": "sv:get-context",
+    "prefix": "s-get-context",
     "body": ["const context = getContext(${0});"]
   }
 }

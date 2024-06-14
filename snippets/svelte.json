@@ -1,6 +1,6 @@
 {
   "Svelte template": {
-    "prefix": "sv:base",
+    "prefix": "s-base",
     "body": [
       "<script lang=\"ts\">",
       "",
@@ -16,7 +16,7 @@
     ]
   },
   "Svelte children": {
-    "prefix": "sv:base-component",
+    "prefix": "s-base-component",
     "body": [
       "<script lang=\"ts\">",
       "import type { Snippet } from 'svelte';",
@@ -35,35 +35,35 @@
     ]
   },
   "Svelte script": {
-    "prefix": "sv:script",
+    "prefix": "s-script",
     "body": ["<script lang=\"ts\">", "  ${0}", "</script>"]
   },
   "Svelte css": {
-    "prefix": "sv:css",
+    "prefix": "s-css",
     "body": ["<style>", "  ${0}", "</style>"]
   },
   "Svelte css lang": {
-    "prefix": "sv:css-lang",
+    "prefix": "s-css-lang",
     "body": ["<style lang=\"${1}\">", "  ${0}", "</style>"]
   },
   "Svelte self": {
-    "prefix": "sv:self",
+    "prefix": "s-self",
     "body": ["<svelte:self />"]
   },
   "svelte options": {
-    "prefix": "sv:options",
+    "prefix": "s-options",
     "body": ["<svelte:options />"]
   },
   "Svelte window": {
-    "prefix": "sv:window",
+    "prefix": "s-window",
     "body": ["<svelte:window ${0} />"]
   },
   "Svelte head": {
-    "prefix": "sv:head",
+    "prefix": "s-head",
     "body": ["<svelte:head>", "  ${0}", "</svelte:head>"]
   },
   "Svelte body": {
-    "prefix": "sv:body",
+    "prefix": "s-body",
     "body": ["<svelte:body ${0} />"]
   }
 }
