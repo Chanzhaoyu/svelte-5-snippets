@@ -2,7 +2,7 @@
 
 This extension is a set of Snippets for Svelte. They are created so that scaffolding with Svelte can be easy. You can try to remember most of these.
 
-![Demo](https://github.com/Chanzhaoyu/svelte-5-snippets/raw/master/images/demo.gif)
+![Demo](https://github.com/Chanzhaoyu/svelte-5-snippets/raw/master/images/cover.png)
 
 ## Snippets Documentation
 

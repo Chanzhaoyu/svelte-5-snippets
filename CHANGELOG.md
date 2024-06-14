@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.5]
+
+- fix: `s-self` snippet
+
 ## [1.0.4]
 
 - chore: change `sk` to `sk-`
