@@ -446,7 +446,7 @@ export const actions: Actions = {
 </details>
 
 <details>
-<summary>sk-handle</summary>
+<summary>sk-hooks</summary>
 
 ```ts
 import type { Handle } from "./$types";
