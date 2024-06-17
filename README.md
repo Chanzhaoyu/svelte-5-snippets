@@ -73,8 +73,10 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 <details>
 <summary>s-if</summary>
 
-```html
-{#if } {/if}
+```
+{#if }
+
+{/if}
 ```
 
 </details>
@@ -82,8 +84,12 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 <details>
 <summary>s-if-else</summary>
 
-```html
-{#if } {:else} {/if}
+```
+{#if }
+
+{:else}
+
+{/if}
 ```
 
 </details>
@@ -430,7 +436,7 @@ export const load: LayoutServerLoad = async (event) => {
 <summary>sk-actions</summary>
 
 ```ts
-import { Actions } from "./$types";
+import type { Actions } from "./$types";
 
 export const actions: Actions = {
   async default({}) {},
@@ -588,7 +594,7 @@ $state.snapshot();
 <summary>s-state-is</summary>
 
 ```ts
-$state.is(, )
+$state.is(state1, state2);
 ```
 
 </details>
@@ -634,8 +640,8 @@ $effect.pre(() => {});
 
 ```ts
 $effect(() => {
-	console.log('in effect:', $effect.tracking());
-})
+  console.log("in effect:", $effect.tracking());
+});
 ```
 
 </details>
@@ -675,7 +681,7 @@ let valueComputed = {
 <summary>s-props</summary>
 
 ```ts
-let {} = $props();
+let { children } = $props();
 ```
 
 </details>
@@ -746,7 +752,7 @@ export function createCounter() {
 <summary>s-set-context</summary>
 
 ```ts
-setContext("");
+setContext("key", "value");
 ```
 
 </details>
@@ -755,7 +761,7 @@ setContext("");
 <summary>s-get-context</summary>
 
 ```ts
-const context = getContext();
+const context = getContext("key");
 ```
 
 </details>
