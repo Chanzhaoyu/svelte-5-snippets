@@ -65,22 +65,22 @@
   "SvelteKit Page Actions": {
     "prefix": "sk-actions",
     "body": [
-      "import { Actions } from './\\$types';",
+      "import type { Actions } from './\\$types';",
       "",
       "export const actions: Actions = {",
-      "   async ${1:default}({ $2 }) {",
-      "     $3",
+      "   async default({ request }) {",
+      "     $0",
       "   }",
       "};"
     ]
   },
-  "SvelteKit Hooks Handle": {
-    "prefix": "sk-handle",
+  "SvelteKit Hooks": {
+    "prefix": "sk-hooks",
     "body": [
       "import type { Handle } from \"@sveltejs/kit\";",
       "",
       "export const handle: Handle = async ({ event, resolve }) => {",
-      "   $1",
+      "   $0",
       "",
       "   const response = await resolve(event);",
       "   return response;",
