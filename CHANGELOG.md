@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.8]
+- typo
+
 ## [1.0.7]
 - pref: snippets default value
 - chore: rename `sk-handle` to `sk-hooks`
