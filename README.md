@@ -766,6 +766,16 @@ const context = getContext("key");
 
 </details>
 
+<details>
+<summary>s-has-context</summary>
+
+```ts
+if (hasContext("key")) {
+}
+```
+
+</details>
+
 ## Css
 
 <details>

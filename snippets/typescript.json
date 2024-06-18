@@ -126,5 +126,9 @@
   "Svelte getContext()": {
     "prefix": "s-get-context",
     "body": ["const context = getContext(${0:key});"]
+  },
+  "Svelte hasContext()": {
+    "prefix": "s-has-context",
+    "body": ["if (hasContext('${1:key}')) {", "  ${0}", "}"]
   }
 }
