@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.9]
+- fix: `sk-api-post`
+
 ## [1.0.8]
 - typo
 
