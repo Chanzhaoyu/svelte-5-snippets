@@ -1,5 +1,8 @@
 # Change Log
 
+# [1.0.11]
+- chore: change docs
+
 ## [1.0.10]
 - feat: add `sk-page-params`
 

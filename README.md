@@ -403,6 +403,7 @@ export const load: PageLoad = async (event) => {
   const { id } = $page.params;
 </script>
 ```
+</details>
 
 <details>
 <summary>sk-page-server-load</summary>
