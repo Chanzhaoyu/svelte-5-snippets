@@ -394,6 +394,17 @@ export const load: PageLoad = async (event) => {
 </details>
 
 <details>
+<summary>sk-page-params</summary>
+
+```html
+<script lang="ts">
+  import { page } from "$app/stores";
+
+  const { id } = $page.params;
+</script>
+```
+
+<details>
 <summary>sk-page-server-load</summary>
 
 ```ts
@@ -491,7 +502,7 @@ export const GET = (async ({ request }: RequestEvent) => {
 import type { RequestHandler, RequestEvent } from "./$types";
 import { json } from "@sveltejs/kit";
 
-export const GET = (async ({ request }: RequestEvent) => {
+export const POST = (async ({ request }: RequestEvent) => {
   return json({ message: "POST" });
 }) satisfies RequestHandler;
 ```

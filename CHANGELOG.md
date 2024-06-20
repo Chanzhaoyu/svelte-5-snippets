@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.10]
+- feat: add `sk-page-params`
+
 ## [1.0.9]
 - fix: `sk-api-post`
 

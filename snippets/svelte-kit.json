@@ -23,6 +23,14 @@
       "};"
     ]
   },
+  "SvelteKit Page params": {
+    "prefix": "sk-page-params",
+    "body": [
+      "import { page } from '\\$app/stores';",
+      "",
+      "const { ${1:id} } = \\$page.params;"
+    ]
+  },
   "SvelteKit Page Server Load": {
     "prefix": "sk-page-server-load",
     "body": [
