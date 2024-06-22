@@ -374,7 +374,7 @@ animate:flip="{{delay: 250, duration: 250}}"
 <script lang="ts">
   import type { PageData } from "./$types";
 
-  export let data: PageData;
+  const { data }: { data: PageData } = $props();
 </script>
 ```
 
@@ -403,6 +403,7 @@ export const load: PageLoad = async (event) => {
   const { id } = $page.params;
 </script>
 ```
+
 </details>
 
 <details>
@@ -472,12 +473,19 @@ export const handle: Handle = async ({ event, resolve }) => {
 </details>
 
 <details>
+<summary>sk-json</summary>
+
+```ts
+json({ data: "" }, { status: 200 });
+```
+
+</details>
+
+<details>
 <summary>sk-error</summary>
 
 ```ts
-error(404, {
-  message: "Not found",
-});
+error(404, { message: "Not found" });
 ```
 
 </details>
