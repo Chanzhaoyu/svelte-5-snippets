@@ -190,7 +190,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 <summary>s-snippet</summary>
 
 ```
-{#snippet fc(value)}
+{#snippet name(value)}
 
 {/snippet}
 ```

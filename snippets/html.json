@@ -59,7 +59,7 @@
   },
   "Svelte snippet": {
     "prefix": "s-snippet",
-    "body": ["{#snippet ${1:fc(value)}}", "  ${0}", "{/snippet}"]
+    "body": ["{#snippet ${1:name(value)}}", "  ${0}", "{/snippet}"]
   },
   "Svelte slot": {
     "prefix": "s-slot",
