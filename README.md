@@ -102,6 +102,8 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 
 {:else if }
 
+{:else}
+
 {/if}
 ```
 
