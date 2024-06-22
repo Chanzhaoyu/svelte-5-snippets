@@ -1,5 +1,11 @@
 # Change Log
 
+# [1.0.12]
+- feat: add `sk-json`
+- pref: change `sk-page`
+- pref: change `s-snippet`
+
+
 # [1.0.11]
 - chore: change docs
 
