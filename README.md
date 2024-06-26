@@ -53,7 +53,7 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>s-css</summary>
+<summary>s-style</summary>
 
 ```html
 <style></style>
@@ -62,7 +62,16 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>s-css-lang</summary>
+<summary>s-style-global</summary>
+
+```html
+<style global></style>
+```
+
+</details>
+
+<details>
+<summary>s-style-lang</summary>
 
 ```html
 <style lang=""></style>
@@ -583,6 +592,15 @@ import { env } from "$env/dynamic/private";
 
 </details>
 
+<details>
+<summary>sk-env-public</summary>
+
+```ts
+import { env } from "$env/static/public";
+```
+
+</details>
+
 ## TypeScript / JavaScript
 
 <details>
@@ -801,7 +819,7 @@ if (hasContext("key")) {
 ## Css
 
 <details>
-<summary>s-global-css</summary>
+<summary>s-css-global</summary>
 
 ```css
 :global() {

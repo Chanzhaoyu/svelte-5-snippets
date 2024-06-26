@@ -1,5 +1,11 @@
 # Change Log
 
+# [1.0.14]
+
+- feat: add `sk-env-public`
+- perf: change `s-css-*` to `s-style-*`
+- perf: change `s-global-css` to `s-css-global`
+
 # [1.0.13]
 
 - pref: change `s-if-else-if`

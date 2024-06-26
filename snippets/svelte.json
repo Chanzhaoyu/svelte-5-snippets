@@ -38,13 +38,17 @@
     "prefix": "s-script",
     "body": ["<script lang=\"ts\">", "  ${0}", "</script>"]
   },
-  "Svelte css": {
-    "prefix": "s-css",
+  "Svelte style": {
+    "prefix": "s-style",
     "body": ["<style>", "  ${0}", "</style>"]
   },
-  "Svelte css lang": {
-    "prefix": "s-css-lang",
-    "body": ["<style lang=\"${1}\">", "  ${0}", "</style>"]
+  "Svelte style lang": {
+    "prefix": "s-style-lang",
+    "body": ["<style lang=\"${1:scss}\">", "  ${0}", "</style>"]
+  },
+  "Svelte style global": {
+    "prefix": "s-style-global",
+    "body": ["<style global>", "  ${0}", "</style>"]
   },
   "Svelte self": {
     "prefix": "s-self",

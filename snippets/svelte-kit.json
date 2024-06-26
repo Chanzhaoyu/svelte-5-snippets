@@ -171,5 +171,9 @@
   "SvelteKit env private": {
     "prefix": "sk-env-private",
     "body": ["import { env } from \"\\$env/dynamic/private\";", "", "${0}"]
+  },
+  "SvelteKit env public": {
+    "prefix": "sk-env-public",
+    "body": ["import { env } from \"\\$env/static/public\";", "", "${0}"]
   }
 }
