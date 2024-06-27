@@ -643,7 +643,7 @@ $state.is(state1, state2);
 <summary>s-derived</summary>
 
 ```ts
-let value = $derived();
+const value = $derived();
 ```
 
 </details>
@@ -652,7 +652,7 @@ let value = $derived();
 <summary>s-derived-by</summary>
 
 ```ts
-let value = $derived.by(() => {});
+const value = $derived.by(() => {});
 ```
 
 </details>

@@ -17,11 +17,11 @@
   },
   "Svelte $derived()": {
     "prefix": "s-derived",
-    "body": ["let value = \\$derived(${0});"]
+    "body": ["const value = \\$derived(${0});"]
   },
   "Svelte $derived.by() ": {
     "prefix": "s-derived-by",
-    "body": ["let value = \\$derived.by(()=>{", "  ${0}", "})"]
+    "body": ["const value = \\$derived.by(()=>{", "  ${0}", "})"]
   },
   "Svelte $effect()": {
     "prefix": "s-effect",
