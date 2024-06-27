@@ -759,6 +759,9 @@ export function useCounter() {
     get count() {
       return count;
     },
+    set count(newValue) {
+      count = newValue;
+    },
     increment,
   };
 }
