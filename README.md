@@ -463,7 +463,7 @@ export const load: LayoutServerLoad = async (event) => {
 import type { Actions } from "./$types";
 
 export const actions: Actions = {
-  async default({}) {},
+  async default() {},
 };
 ```
 
@@ -721,7 +721,9 @@ let valueComputed = {
 <summary>s-props</summary>
 
 ```ts
-let { children } = $props();
+interface Props {}
+
+let {} = $props();
 ```
 
 </details>

@@ -71,7 +71,7 @@
   },
   "Svelte $props()": {
     "prefix": "s-props",
-    "body": ["let { ${0} } = \\$props();"]
+    "body": ["interface Props {${1}}", "", "let {${0}}: Props = \\$props();"]
   },
   "Svelte $host()": {
     "prefix": "s-host",

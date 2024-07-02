@@ -1,5 +1,10 @@
 # Change Log
 
+# [1.0.15]
+
+- perf: change `s-props`
+- perf: change `sk-actions`
+
 # [1.0.14]
 
 - feat: add `sk-env-public`

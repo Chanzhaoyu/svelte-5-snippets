@@ -76,7 +76,7 @@
       "import type { Actions } from './\\$types';",
       "",
       "export const actions: Actions = {",
-      "   async default({ request }) {",
+      "   async default() {",
       "     $0",
       "   }",
       "};"
