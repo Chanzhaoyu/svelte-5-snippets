@@ -165,12 +165,12 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
-<summary>s-if</summary>
+<summary>s-key</summary>
 
 ```
-{#if }
+{#key }
 
-{/if}
+{/key}
 ```
 
 </details>
