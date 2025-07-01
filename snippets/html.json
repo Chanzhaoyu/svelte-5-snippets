@@ -45,6 +45,14 @@
       "{/each}"
     ]
   },
+  "Svelte key": {
+    "prefix": "s-key",
+    "body": [
+      "{#key ${0}}",
+      "",
+      "{/key}"
+    ]
+  },
   "Svelte await": {
     "prefix": "s-await",
     "body": [
