@@ -420,9 +420,9 @@ export const load: PageLoad = async (event) => {
 
 ```html
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 
-  const { id } = $page.params;
+  const { id } = $derived(page.params);
 </script>
 ```
 
