@@ -44,6 +44,21 @@
       "};"
     ]
   },
+  "SvelteKit Layout": {
+    "prefix": "sk-layout",
+    "body": [
+      "<script lang=\"ts\">",
+      "  import type { LayoutProps } from './\\$types';",
+      "",
+      "  const { data, children }: LayoutProps = \\$props()",
+      "</script>",
+      "",
+      "<main>",
+      "  {@render children()}",
+      "</main>",
+      ""
+    ]
+  },
   "SvelteKit Layout Load": {
     "prefix": "sk-layout-load",
     "body": [
@@ -97,11 +112,15 @@
   },
   "SvelteKit Json": {
     "prefix": "sk-json",
-    "body": ["json({ data: '' }, { status: 200 })"]
+    "body": [
+      "json({ data: '' }, { status: 200 })"
+    ]
   },
   "SvelteKit Error": {
     "prefix": "sk-error",
-    "body": ["error(404, { message: \"Not found\" });"]
+    "body": [
+      "error(404, { message: \"Not found\" });"
+    ]
   },
   "SvelteKit api GET": {
     "prefix": "sk-api-get",
@@ -170,10 +189,18 @@
   },
   "SvelteKit env private": {
     "prefix": "sk-env-private",
-    "body": ["import { env } from \"\\$env/dynamic/private\";", "", "${0}"]
+    "body": [
+      "import { env } from \"\\$env/dynamic/private\";",
+      "",
+      "${0}"
+    ]
   },
   "SvelteKit env public": {
     "prefix": "sk-env-public",
-    "body": ["import { env } from \"\\$env/static/public\";", "", "${0}"]
+    "body": [
+      "import { env } from \"\\$env/static/public\";",
+      "",
+      "${0}"
+    ]
   }
 }

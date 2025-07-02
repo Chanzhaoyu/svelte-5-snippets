@@ -442,6 +442,23 @@ export const load: PageServerLoad = async (event) => {
 </details>
 
 <details>
+<summary>sk-layout</summary>
+
+```svelte
+<script lang="ts">
+import type { LayoutProps } from './$types';
+
+const { data, children }: LayoutProps = $props();
+</script>
+
+<main>
+	{@render children()}
+</main>
+```
+
+</details>
+
+<details>
 <summary>sk-layout-load</summary>
 
 ```ts
