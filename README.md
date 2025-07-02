@@ -394,9 +394,9 @@ animate:flip="{{delay: 250, duration: 250}}"
 
 ```html
 <script lang="ts">
-  import type { PageData } from "./$types";
+  import type { PageProps } from "./$types";
 
-  const { data }: { data: PageData } = $props();
+  const { data }: PageProps = $props();
 </script>
 ```
 
