@@ -165,6 +165,17 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
+<summary>s-key</summary>
+
+```
+{#key }
+
+{/key}
+```
+
+</details>
+
+<details>
 <summary>s-await</summary>
 
 ```
