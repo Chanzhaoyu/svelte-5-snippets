@@ -1,5 +1,9 @@
 # Change Log
 
+# [1.0.18]
+
+- pref: change `sk-page-params` to new type api
+
 # [1.0.17]
 - feat: add `sk-layout`
 - pref: change `sk-page` to new type api
