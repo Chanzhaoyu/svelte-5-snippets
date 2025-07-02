@@ -3,9 +3,9 @@
     "prefix": "sk-page",
     "body": [
       "<script lang=\"ts\">",
-      "  import type { PageData } from './\\$types';",
+      "  import type { PageProps } from './\\$types';",
       "",
-      "  const { data }: { data: PageData } = \\$props()",
+      "  const { data }: PageProps = \\$props()",
       "  ${0}",
       "</script>"
     ]
