@@ -1,5 +1,9 @@
 # Change Log
 
+# [1.0.16]
+
+- feat: add `s-key`
+
 # [1.0.15]
 
 - perf: change `s-props`
