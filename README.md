@@ -220,6 +220,16 @@ This extension is a set of Snippets for Svelte. They are created so that scaffol
 </details>
 
 <details>
+<summary>s-const</summary>
+
+```
+{@const name = value}
+
+```
+
+</details>
+
+<details>
 <summary>s-slot</summary>
 
 ```

@@ -77,6 +77,10 @@
     "prefix": "s-snippet",
     "body": ["{#snippet ${1:name(value)}}", "  ${0}", "{/snippet}"]
   },
+   "Svelte const": {
+    "prefix": "s-const",
+    "body": ["{@const ${0:name} = ${1:value}}"]
+  },
   "Svelte slot": {
     "prefix": "s-slot",
     "body": ["<slot></slot>"]

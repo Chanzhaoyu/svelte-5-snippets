@@ -1,5 +1,9 @@
 # Change Log
 
+# [1.0.19]
+
+- feat: add `s-const`
+
 # [1.0.18]
 
 - pref: change `sk-page-params` to new type api
