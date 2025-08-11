@@ -38,6 +38,16 @@
       "const { ${1:id} } = \\$derived(page.params);"
     ]
   },
+  "SvelteKit Page Error": {
+    "prefix": "sk-page-error",
+    "body": [
+      "<script lang=\"ts\">",
+      "import { page } from '\\$app/state';",
+      "</script>",
+      "",
+      "<h1>{page.status}: {page.error.message}</h1>"
+    ]
+  },
   "SvelteKit Page Server Load": {
     "prefix": "sk-page-server-load",
     "body": [

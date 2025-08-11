@@ -443,6 +443,17 @@ export const load: PageLoad = async (event) => {
 </script>
 ```
 
+<details>
+<summary>sk-page-error</summary>
+
+```html
+<script lang="ts">
+  import { page } from "$app/state";
+</script>
+
+<h1>{page.status}: {page.error.message}</h1>
+```
+
 </details>
 
 <details>
