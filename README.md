@@ -408,6 +408,15 @@ import type { PageProps } from "./$types";
 const { data }: PageProps = $props();
 ```
 
+<details>
+<summary>sk-page-data</summary>
+
+```ts
+import type { PageData, ActionData } from './$types';
+
+const { data, form }: { data: PageData, form: ActionData } = $props();
+```
+
 </details>
 
 <details>

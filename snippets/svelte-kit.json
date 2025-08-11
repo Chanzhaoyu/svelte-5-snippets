@@ -8,6 +8,15 @@
       "${0}"
     ]
   },
+  "SvelteKit Page Data": {
+    "prefix": "sk-page-data",
+    "body": [
+      "import type { PageData, ActionData } from './\\$types';",
+      "",
+      "const { data, form }: { data: PageData, form: ActionData} = \\$props()",
+      "${0}"
+    ]
+  },
   "SvelteKit Page Load": {
     "prefix": "sk-page-load",
     "body": [
