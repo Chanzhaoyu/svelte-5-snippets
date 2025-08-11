@@ -397,10 +397,9 @@ animate:flip="{{delay: 250, duration: 250}}"
 
 </details>
 
-## Svelte Kit
-
+## Svelte Ki
 <details>
-<summary>sk-page-props</summary>
+<summary>sk-page</summary>
 
 ```ts
 import type { PageProps } from "./$types";

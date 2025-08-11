@@ -1,6 +1,6 @@
 {
   "SvelteKit Page Props": {
-    "prefix": "sk-page-props",
+    "prefix": "sk-page",
     "body": [
       "import type { PageProps } from './\\$types';",
       "",
