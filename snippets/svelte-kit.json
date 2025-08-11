@@ -143,9 +143,9 @@
       "import type { RequestHandler, RequestEvent } from './\\$types';",
       "import { json } from \"@sveltejs/kit\"",
       "",
-      "export const GET = (async ({ request }: RequestEvent) => {",
+      "export const GET: RequestHandler = (async ({ request }: RequestEvent) => {",
       "  return json({ message: 'GET' })",
-      "}) satisfies RequestHandler;"
+      "});"
     ]
   },
   "SvelteKit api POST": {
@@ -154,9 +154,9 @@
       "import type { RequestHandler, RequestEvent } from './\\$types';",
       "import { json } from \"@sveltejs/kit\"",
       "",
-      "export const POST = (async ({ request }: RequestEvent) => {",
+      "export const POST: RequestHandler = (async ({ request }: RequestEvent) => {",
       "  return json({ message: 'POST' })",
-      "}) satisfies RequestHandler;"
+      "});"
     ]
   },
   "SvelteKit api PUT": {
@@ -165,9 +165,9 @@
       "import type { RequestHandler, RequestEvent } from './\\$types';",
       "import { json } from \"@sveltejs/kit\"",
       "",
-      "export const PUT = (async ({ request }: RequestEvent) => {",
+      "export const PUT: RequestHandler = (async ({ request }: RequestEvent) => {",
       "  return json({ message: 'PUT' })",
-      "}) satisfies RequestHandler;"
+      "});"
     ]
   },
   "SvelteKit api DELETE": {
@@ -176,9 +176,9 @@
       "import type { RequestHandler, RequestEvent } from './\\$types';",
       "import { json } from \"@sveltejs/kit\"",
       "",
-      "export const DELETE = (async ({ request }: RequestEvent) => {",
+      "export const DELETE: RequestHandler = (async ({ request }: RequestEvent) => {",
       "  return json({ message: 'DELETE' })",
-      "}) satisfies RequestHandler;"
+      "});"
     ]
   },
   "SvelteKit api PATCH": {
@@ -187,9 +187,9 @@
       "import type { RequestHandler, RequestEvent } from './\\$types';",
       "import { json } from \"@sveltejs/kit\"",
       "",
-      "export const PATCH = (async ({ request }: RequestEvent) => {",
+      "export const PATCH: RequestHandler = (async ({ request }: RequestEvent) => {",
       "  return json({ message: 'PATCH' })",
-      "}) satisfies RequestHandler;"
+      "});"
     ]
   },
   "SvelteKit browser": {

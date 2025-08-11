@@ -562,9 +562,9 @@ error(404, { message: "Not found" });
 import type { RequestHandler, RequestEvent } from "./$types";
 import { json } from "@sveltejs/kit";
 
-export const GET = (async ({ request }: RequestEvent) => {
+export const GET: RequestHandler = (async ({ request }: RequestEvent) => {
   return json({ message: "GET" });
-}) satisfies RequestHandler;
+});
 ```
 
 </details>
@@ -576,9 +576,9 @@ export const GET = (async ({ request }: RequestEvent) => {
 import type { RequestHandler, RequestEvent } from "./$types";
 import { json } from "@sveltejs/kit";
 
-export const POST = (async ({ request }: RequestEvent) => {
+export const POST: RequestHandler = (async ({ request }: RequestEvent) => {
   return json({ message: "POST" });
-}) satisfies RequestHandler;
+});
 ```
 
 </details>
@@ -590,9 +590,9 @@ export const POST = (async ({ request }: RequestEvent) => {
 import type { RequestHandler, RequestEvent } from "./$types";
 import { json } from "@sveltejs/kit";
 
-export const PUT = (async ({ request }: RequestEvent) => {
+export const PUT: RequestHandler = (async ({ request }: RequestEvent) => {
   return json({ message: "PUT" });
-}) satisfies RequestHandler;
+});
 ```
 
 </details>
@@ -604,9 +604,9 @@ export const PUT = (async ({ request }: RequestEvent) => {
 import type { RequestHandler, RequestEvent } from "./$types";
 import { json } from "@sveltejs/kit";
 
-export const DELETE = (async ({ request }: RequestEvent) => {
+export const DELETE: RequestHandler = (async ({ request }: RequestEvent) => {
   return json({ message: "DELETE" });
-}) satisfies RequestHandler;
+});
 ```
 
 </details>
@@ -618,9 +618,9 @@ export const DELETE = (async ({ request }: RequestEvent) => {
 import type { RequestHandler, RequestEvent } from "./$types";
 import { json } from "@sveltejs/kit";
 
-export const PATCH = (async ({ request }: RequestEvent) => {
+export const PATCH: RequestHandler = (async ({ request }: RequestEvent) => {
   return json({ message: "PATCH" });
-}) satisfies RequestHandler;
+});
 ```
 
 </details>
