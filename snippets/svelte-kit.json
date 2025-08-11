@@ -119,9 +119,7 @@
       "",
       "export const handle: Handle = async ({ event, resolve }) => {",
       "   $0",
-      "",
-      "   const response = await resolve(event);",
-      "   return response;",
+      "   return resolve(event);",
       "};"
     ]
   },

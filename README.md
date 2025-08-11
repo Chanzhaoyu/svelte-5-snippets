@@ -529,8 +529,7 @@ export const actions: Actions = {
 import type { Handle } from "./$types";
 
 export const handle: Handle = async ({ event, resolve }) => {
-  const response = await resolve(event);
-  return response;
+  return resolve(event);
 };
 ```
 
