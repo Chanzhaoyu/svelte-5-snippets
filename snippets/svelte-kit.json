@@ -1,13 +1,11 @@
 {
-  "SvelteKit Page": {
-    "prefix": "sk-page",
+  "SvelteKit Page Props": {
+    "prefix": "sk-page-props",
     "body": [
-      "<script lang=\"ts\">",
-      "  import type { PageProps } from './\\$types';",
+      "import type { PageProps } from './\\$types';",
       "",
-      "  const { data }: PageProps = \\$props()",
-      "  ${0}",
-      "</script>"
+      "const { data }: PageProps = \\$props()",
+      "${0}"
     ]
   },
   "SvelteKit Page Load": {
