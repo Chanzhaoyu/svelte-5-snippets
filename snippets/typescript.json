@@ -1,7 +1,7 @@
 {
   "Svelte $state()": {
     "prefix": "s-state",
-    "body": ["let state = \\$state(${0})"]
+    "body": ["let ${1:state} = \\$state(${2})$0"]
   },
   "Svelte $state.frozen()": {
     "prefix": "s-state-frozen",
@@ -17,11 +17,11 @@
   },
   "Svelte $derived()": {
     "prefix": "s-derived",
-    "body": ["const value = \\$derived(${0});"]
+    "body": ["const ${1:value} = \\$derived(${2})$0"]
   },
-  "Svelte $derived.by() ": {
+  "Svelte $derived.by()": {
     "prefix": "s-derived-by",
-    "body": ["const value = \\$derived.by(()=>{", "  ${0}", "})"]
+    "body": ["const ${1:value} = \\$derived.by(() => {", "  ${2}", "})$0"]
   },
   "Svelte $effect()": {
     "prefix": "s-effect",
