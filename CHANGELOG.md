@@ -1,5 +1,8 @@
 # Change Log
 
+# [1.0.21]
+- feat: update runes
+
 ## [1.0.20]
 - pref: state and derived runes
 
