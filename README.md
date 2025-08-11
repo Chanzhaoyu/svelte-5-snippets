@@ -474,9 +474,9 @@ export const load: PageServerLoad = async (event) => {
 
 ```svelte
 <script lang="ts">
-import type { LayoutData } from './$types';
+import type { LayoutProps } from './$types';
 
-const { data, children }: { data: LayoutData, children: Snippet } = $props();
+const { data, children }: LayoutProps = $props();
 </script>
 
 {@render children()}
