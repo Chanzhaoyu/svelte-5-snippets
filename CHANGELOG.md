@@ -1,9 +1,12 @@
 # Change Log
 
-# [1.0.22]
+## [1.0.23]
+- doc: update documentation for new features
+
+## [1.0.22]
 - pref: rename `sk-page`
 
-# [1.0.21]
+## [1.0.21]
 - feat: update runes
 
 ## [1.0.20]
