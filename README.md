@@ -397,7 +397,8 @@ animate:flip="{{delay: 250, duration: 250}}"
 
 </details>
 
-## Svelte Ki
+## Svelte Kit
+
 <details>
 <summary>sk-page</summary>
 
@@ -406,6 +407,8 @@ import type { PageProps } from "./$types";
 
 const { data }: PageProps = $props();
 ```
+
+</details>
 
 <details>
 <summary>sk-page-data</summary>
@@ -441,6 +444,7 @@ export const load: PageLoad = async (event) => {
   const { id } = $derived(page.params);
 </script>
 ```
+</details>
 
 <details>
 <summary>sk-page-error</summary>
