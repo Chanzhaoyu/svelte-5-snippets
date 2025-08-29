@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.1.0]
+- pref: Replace space indentation with `\t`
+
 ## [1.0.23]
 - doc: update documentation for new features
 
