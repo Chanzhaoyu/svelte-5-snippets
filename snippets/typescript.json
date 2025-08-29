@@ -21,21 +21,21 @@
   },
   "Svelte $derived.by()": {
     "prefix": "s-derived-by",
-    "body": ["const ${1:value} = \\$derived.by(() => {", "  ${2}", "})$0"]
+    "body": ["const ${1:value} = \\$derived.by(() => {", "\t${2}", "})$0"]
   },
   "Svelte $effect()": {
     "prefix": "s-effect",
-    "body": ["\\$effect(() => {", "  ${0}", "})"]
+    "body": ["\\$effect(() => {", "\t${0}", "})"]
   },
   "Svelte $effect.pre()": {
     "prefix": "s-effect-pre",
-    "body": ["\\$effect.pre(() => {", "  ${0}", "})"]
+    "body": ["\\$effect.pre(() => {", "\t${0}", "})"]
   },
   "Svelte $effect.tracking()": {
     "prefix": "s-effect-tracking",
     "body": [
       "\\$effect(() => {",
-      "  console.log('in effect:', \\$effect.tracking());",
+      "\tconsole.log('in effect:', \\$effect.tracking());",
       "})"
     ]
   },
@@ -43,13 +43,13 @@
     "prefix": "s-effect-root",
     "body": [
       "const cleanup = \\$effect.root(() => {",
-      "  \\$effect(() => {",
-      "    ${0}",
-      "  })",
+      "\t\\$effect(() => {",
+      "\t\t${0}",
+      "\t})",
       "",
-      "  return () => {",
-      "    ",
-      "  };",
+      "\treturn () => {",
+      "\t\t",
+      "\t};",
       "});"
     ]
   },
@@ -59,12 +59,12 @@
       "let value = \\$state(\"\")",
       "",
       "let valueComputed = {",
-      "  get value() {",
-      "    return value;",
-      "  },",
-      "  set value(newValue) {",
-      "    value = newValue;",
-      "  }",
+      "\tget value() {",
+      "\t\treturn value;",
+      "\t},",
+      "\tset value(newValue) {",
+      "\t\tvalue = newValue;",
+      "\t}",
       "};",
       "${0}"
     ]
@@ -75,31 +75,31 @@
   },
   "Svelte $host()": {
     "prefix": "s-host",
-    "body": ["\\$host().dispatchEvent(", "  ${0}", ");"]
+    "body": ["\\$host().dispatchEvent(", "\t${0}", ");"]
   },
   "Svelte flushSync": {
     "prefix": "s-flush-sync",
-    "body": ["flushSync(() => {", "  ${0}", "})"]
+    "body": ["flushSync(() => {", "\t${0}", "})"]
   },
   "Svelte hook": {
     "prefix": "s-hook",
     "body": [
       "export function useCounter() {",
-      "  let count = \\$state(0)",
+      "\tlet count = \\$state(0)",
       "",
-      "  function increment() {",
-      "    count += 1;",
-      "  }",
+      "\tfunction increment() {",
+      "\t\tcount += 1;",
+      "\t}",
       "",
-      "  return {",
-      "    get count() {",
-      "      return count;",
-      "    },",
-      "    set count(newValue) {",
-      "      count = newValue;",
-      "    },",
-      "    increment",
-      "  };",
+      "\treturn {",
+      "\t\tget count() {",
+      "\t\t\treturn count;",
+      "\t\t},",
+      "\t\tset count(newValue) {",
+      "\t\t\tcount = newValue;",
+      "\t\t},",
+      "\t\tincrement",
+      "\t};",
       "}"
     ]
   },
@@ -109,16 +109,16 @@
       "import { writable } from 'svelte/store';",
       "",
       "export function createCounter() {",
-      "  const { subscribe, update } = writable(0);",
+      "\tconst { subscribe, update } = writable(0);",
       "",
-      "  function increment() {",
-      "    update((count) => count + 1);",
-      "  }",
+      "\tfunction increment() {",
+      "\t\tupdate((count) => count + 1);",
+      "\t}",
       "",
-      "  return {",
-      "    subscribe,",
-      "    increment",
-      "  };",
+      "\treturn {",
+      "\t\tsubscribe,",
+      "\t\tincrement",
+      "\t};",
       "}"
     ]
   },
@@ -132,6 +132,6 @@
   },
   "Svelte hasContext()": {
     "prefix": "s-has-context",
-    "body": ["if (hasContext('${1:key}')) {", "  ${0}", "}"]
+    "body": ["if (hasContext('${1:key}')) {", "\t${0}", "}"]
   }
 }

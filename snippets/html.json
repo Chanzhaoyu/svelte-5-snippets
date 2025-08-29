@@ -5,43 +5,43 @@
   },
   "Svelte else": {
     "prefix": "s-if-else",
-    "body": ["{#if ${1}}", "  ${2}", "{:else}", "  ${0}", "{/if}"]
+    "body": ["{#if ${1}}", "\t${2}", "{:else}", "\t${0}", "{/if}"]
   },
   "Svelte if else if": {
     "prefix": "s-if-else-if",
     "body": [
       "{#if ${1}}",
-      "  ${2}",
+      "\t${2}",
       "{:else if ${3}}",
-      "  ${4}",
+      "\t${4}",
       "{:else}",
-      "  ${0}",
+      "\t${0}",
       "{/if}"
     ]
   },
   "Svelte each": {
     "prefix": "s-each",
-    "body": ["{#each ${1:items} as ${2:item}}", "  ${0}", "{/each}"]
+    "body": ["{#each ${1:items} as ${2:item}}", "\t${0}", "{/each}"]
   },
   "Svelte each else": {
     "prefix": "s-each-else",
     "body": [
       "{#each ${1:items} as ${2:item}}",
-      "  ${0}",
+      "\t${0}",
       "{:else}",
-      "  ",
+      "\t",
       "{/each}"
     ]
   },
   "Svelte each index": {
     "prefix": "s-each-index",
-    "body": ["{#each ${1:items} as ${2:item}, ${3:i}}", "  ${0}", "{/each}"]
+    "body": ["{#each ${1:items} as ${2:item}, ${3:i}}", "\t${0}", "{/each}"]
   },
   "Svelte each index key": {
     "prefix": "s-each-index-key",
     "body": [
       "{#each ${1:items} as ${2:item}, ${3:i} (${4:item.id})}",
-      "  ${0}",
+      "\t${0}",
       "{/each}"
     ]
   },
@@ -57,11 +57,11 @@
     "prefix": "s-await",
     "body": [
       "{#await ${1:promise}}",
-      "  ${0}",
+      "\t${0}",
       "{:then value}",
-      "  ",
+      "\t",
       "{:catch error}",
-      "  ",
+      "\t",
       "{/await}"
     ]
   },
@@ -75,7 +75,7 @@
   },
   "Svelte snippet": {
     "prefix": "s-snippet",
-    "body": ["{#snippet ${1:name(value)}}", "  ${0}", "{/snippet}"]
+    "body": ["{#snippet ${1:name(value)}}", "\t${0}", "{/snippet}"]
   },
    "Svelte const": {
     "prefix": "s-const",
@@ -97,9 +97,9 @@
     "prefix": "s-render-fallback",
     "body": [
       "{#if children}",
-      "  {@render children()}",
+      "\t{@render children()}",
       "{:else}",
-      "  <span>default</span>",
+      "\t<span>default</span>",
       "{/if}"
     ]
   },

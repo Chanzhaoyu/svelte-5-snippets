@@ -23,10 +23,10 @@
       "import type { PageLoad } from './\\$types';",
       "",
       "export const load: PageLoad = async (${1:event}) => {",
-      "   $2",
-      "   return {",
-      "     $0",
-      "   };",
+      "\t$2",
+      "\treturn {",
+      "\t\t$0",
+      "\t};",
       "};"
     ]
   },
@@ -54,10 +54,10 @@
       "import type { PageServerLoad } from './\\$types';",
       "",
       "export const load: PageServerLoad = async (${1:event}) => {",
-      "   $2",
-      "   return {",
-      "     $0",
-      "   };",
+      "\t$2",
+      "\treturn {",
+      "\t\t$0",
+      "\t};",
       "};"
     ]
   },
@@ -65,9 +65,9 @@
     "prefix": "sk-layout",
     "body": [
       "<script lang=\"ts\">",
-      "  import type { LayoutProps } from './\\$types';",
+      "\timport type { LayoutProps } from './\\$types';",
       "",
-      "  const { data, children }: LayoutProps = \\$props()",
+      "\tconst { data, children }: LayoutProps = \\$props()",
       "</script>",
       "",
       "{@render children()}",
@@ -80,10 +80,10 @@
       "import type { LayoutLoad } from './\\$types';",
       "",
       "export const load: LayoutLoad = async (${1:event}) => {",
-      "   $2",
-      "   return {",
-      "     $0",
-      "   };",
+      "\t$2",
+      "\treturn {",
+      "\t\t$0",
+      "\t};",
       "};"
     ]
   },
@@ -93,10 +93,10 @@
       "import type { LayoutServerLoad } from './\\$types';",
       "",
       "export const load: LayoutServerLoad = async (${1:event}) => {",
-      "   $2",
-      "   return {",
-      "     $0",
-      "   };",
+      "\t$2",
+      "\treturn {",
+      "\t\t$0",
+      "\t};",
       "};"
     ]
   },
@@ -106,9 +106,9 @@
       "import type { Actions } from './\\$types';",
       "",
       "export const actions: Actions = {",
-      "   async default() {",
-      "     $0",
-      "   }",
+      "\tasync default() {",
+      "\t\t$0",
+      "\t}",
       "};"
     ]
   },
@@ -118,8 +118,8 @@
       "import type { Handle } from \"@sveltejs/kit\";",
       "",
       "export const handle: Handle = async ({ event, resolve }) => {",
-      "   $0",
-      "   return resolve(event);",
+      "\t$0",
+      "\treturn resolve(event);",
       "};"
     ]
   },
@@ -142,7 +142,7 @@
       "import { json } from \"@sveltejs/kit\"",
       "",
       "export const GET: RequestHandler = (async ({ request }: RequestEvent) => {",
-      "  return json({ message: 'GET' })",
+      "\treturn json({ message: 'GET' })",
       "});"
     ]
   },
@@ -153,7 +153,7 @@
       "import { json } from \"@sveltejs/kit\"",
       "",
       "export const POST: RequestHandler = (async ({ request }: RequestEvent) => {",
-      "  return json({ message: 'POST' })",
+      "\treturn json({ message: 'POST' })",
       "});"
     ]
   },
@@ -164,7 +164,7 @@
       "import { json } from \"@sveltejs/kit\"",
       "",
       "export const PUT: RequestHandler = (async ({ request }: RequestEvent) => {",
-      "  return json({ message: 'PUT' })",
+      "\treturn json({ message: 'PUT' })",
       "});"
     ]
   },
@@ -175,7 +175,7 @@
       "import { json } from \"@sveltejs/kit\"",
       "",
       "export const DELETE: RequestHandler = (async ({ request }: RequestEvent) => {",
-      "  return json({ message: 'DELETE' })",
+      "\treturn json({ message: 'DELETE' })",
       "});"
     ]
   },
@@ -186,7 +186,7 @@
       "import { json } from \"@sveltejs/kit\"",
       "",
       "export const PATCH: RequestHandler = (async ({ request }: RequestEvent) => {",
-      "  return json({ message: 'PATCH' })",
+      "\treturn json({ message: 'PATCH' })",
       "});"
     ]
   },
@@ -196,7 +196,7 @@
       "import { browser } from \"\\$app/environment\";",
       "",
       "if (browser) {",
-      "  ${0}",
+      "\t${0}",
       "}"
     ]
   },
