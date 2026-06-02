@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.2.0]
+- feat: add `sk-rf-import`
+- feat: add `sk-rf-query`
+- feat: add `sk-rf-form`
+- feat: add `sk-rf-command`
+
 ## [1.1.0]
 - pref: Replace space indentation with `\t`
 

@@ -657,6 +657,48 @@ import { env } from "$env/static/public";
 
 </details>
 
+<details>
+<summary>sk-rf-import</summary>
+
+```ts
+import {  } from '$app/server';
+```
+
+</details>
+
+<details>
+<summary>sk-rf-query</summary>
+
+```ts
+export const getItems = query(schema, async (payload) => {
+  
+});
+```
+
+</details>
+
+<details>
+<summary>sk-rf-form</summary>
+
+```ts
+export const formName = form(schema, async (payload) => {
+  
+});
+```
+
+</details>
+
+<details>
+<summary>sk-rf-command</summary>
+
+```ts
+export const commandName = command(schema, async (payload) => {
+  
+});
+```
+
+</details>
+
 ## TypeScript / JavaScript
 
 <details>
